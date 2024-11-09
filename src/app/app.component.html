@@ -2,11 +2,25 @@
   <app-navbar />
   <app-header />
   <app-swipper />
-  <app-how-to-order />
-  <app-popular-menu />
-  <app-explore-menu />
-  <app-faq />
-  <app-footer />
+  <div id="how-to-order" #howToOrder>
+    <app-how-to-order />
+  </div>
+
+  <div id="popular-menu" #popularMenu>
+    <app-popular-menu />
+  </div>
+
+  <div id="explore-menu" #exploreMenu>
+    <app-explore-menu />
+  </div>
+
+  <div id="faq" #faqRef>
+    <app-faq />
+  </div>
+
+  <div id="footer" #footerRef>
+    <app-footer />
+  </div>
 </main>
 
 <router-outlet />
