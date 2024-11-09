@@ -4,11 +4,14 @@
   >
     <span class="text-blue-600 dark:text-blue-500">Best Seller</span> Items
   </h1>
-  <div class="flex flex-wrap justify-center space-x-4">
+
+  <!-- Kontainer utama yang menggunakan flex dan justify-center -->
+  <div class="flex flex-wrap justify-center gap-6 px-4 mx-auto">
+    <!-- Card 1 -->
     <div
       class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-4"
     >
-      <a href="#">
+      <a href="#" class="flex justify-center">
         <img
           class="p-8 rounded-t-lg"
           src="https://food-cms.grab.com/compressed_webp/items/IDITE2024022702104740866/detail/menueditor_item_f643cdac976644a3b689cdd80deb857e_1708999814365553180.webp"
@@ -58,14 +61,14 @@
       </div>
     </div>
 
-    <!-- Repeat for the second and third products -->
+    <!-- Card 1 -->
     <div
       class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-4"
     >
-      <a href="#">
+      <a href="#" class="flex justify-center">
         <img
           class="p-8 rounded-t-lg"
-          src="https://food-cms.grab.com/compressed_webp/items/IDITE20220302103453021808/detail/menueditor_item_1c8c50c123d6409084871d48fd72453f_1662858838755675872.webp"
+          src="https://food-cms.grab.com/compressed_webp/items/IDITE2024022702104740866/detail/menueditor_item_f643cdac976644a3b689cdd80deb857e_1708999814365553180.webp"
           alt="product image"
         />
       </a>
@@ -74,7 +77,7 @@
           <h5
             class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
           >
-            Apple Watch Series 7
+            Iphone 15 Pro Max
           </h5>
         </a>
         <div class="flex items-center mt-2.5 mb-5">
@@ -99,7 +102,7 @@
         </div>
         <div class="flex items-center justify-between">
           <span class="text-xl font-bold text-gray-900 dark:text-white"
-            >Rp 5,985,000</span
+            >Rp 17,985,000</span
           >
           <button
             (click)="showComingSoonAlert()"
@@ -112,13 +115,14 @@
       </div>
     </div>
 
+    <!-- Card 1 -->
     <div
       class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-4"
     >
-      <a href="#">
+      <a href="#" class="flex justify-center">
         <img
           class="p-8 rounded-t-lg"
-          src="https://food-cms.grab.com/compressed_webp/items/IDITE2024030709573206991/detail/menueditor_item_e855e19666f54a50931e7894c779f374_1709805270449647557.webp"
+          src="https://food-cms.grab.com/compressed_webp/items/IDITE2024022702104740866/detail/menueditor_item_f643cdac976644a3b689cdd80deb857e_1708999814365553180.webp"
           alt="product image"
         />
       </a>
@@ -127,7 +131,7 @@
           <h5
             class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
           >
-            Macbook Pro M3
+            Iphone 15 Pro Max
           </h5>
         </a>
         <div class="flex items-center mt-2.5 mb-5">
@@ -152,7 +156,7 @@
         </div>
         <div class="flex items-center justify-between">
           <span class="text-xl font-bold text-gray-900 dark:text-white"
-            >Rp 29,985,000</span
+            >Rp 17,985,000</span
           >
           <button
             (click)="showComingSoonAlert()"
@@ -164,5 +168,7 @@
         </div>
       </div>
     </div>
+
+    <!-- Repeat for other cards (Card 2, Card 3, etc.) -->
   </div>
 </div>
