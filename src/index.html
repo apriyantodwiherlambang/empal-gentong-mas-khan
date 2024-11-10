@@ -2,9 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Empal Gentong Mas Khan</title>
+    <title>
+      Empal Gentong Mas Khans | Empal Gentong Enak di Slipi - Jakarta Barat
+    </title>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Nikmati Empal Gentong enak di Slipi, Jakarta Barat. Mas Khan's Empal Gentong menawarkan cita rasa autentik yang akan memanjakan lidah Anda."
+    />
+
     <!-- Ganti favicon dengan ikon dari URL -->
     <link
       rel="icon"
@@ -18,6 +25,28 @@
     <!-- Import Swiper JS -->
     <script src="node_modules/swiper/swiper-bundle.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+    <!-- Schema JSON-LD for Restaurant -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Empal Gentong Mas Khans",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Jl. Anggrek Garuda No.h 10, RT.1/RW.5",
+          "addressLocality": "Kemanggisan",
+          "addressRegion": "Kec. Palmerah, Kota Jakarta Barat",
+          "postalCode": "11480",
+          "addressCountry": "ID"
+        },
+        "telephone": "+62 896-6403-1115",
+        "openingHours": "Mo-Su 10:00-22:00",
+        "menu": "https://empal-gentong-mas-khans.vercel.app/",
+        "ratingValue": "5",
+        "reviewCount": "200"
+      }
+    </script>
   </head>
   <body>
     <app-root></app-root>

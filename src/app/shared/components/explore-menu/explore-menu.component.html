@@ -1,143 +1,49 @@
 <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
   <button
+    (click)="setCategory('all')"
     type="button"
-    class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800"
+    class="text-gray-700 hover:text-white bg-white hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-yellow-400 dark:text-yellow-400 dark:hover:text-white dark:hover:bg-yellow-400 dark:bg-gray-900 dark:focus:ring-yellow-400"
   >
     All categories
   </button>
   <button
+    (click)="setCategory('makanan')"
     type="button"
-    class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800"
+    class="text-gray-700 border border-white hover:text-white hover:bg-yellow-300 hover:border-yellow-300 dark:border-yellow-300 dark:bg-yellow-300 dark:hover:border-yellow-300 bg-white focus:ring-4 focus:outline-none focus:ring-yellow-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-yellow-300"
   >
     Makanan
   </button>
   <button
+    (click)="setCategory('minuman')"
     type="button"
-    class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800"
+    class="text-gray-700 border border-white hover:text-white hover:bg-yellow-300 hover:border-yellow-300 dark:border-yellow-300 dark:bg-yellow-300 dark:hover:border-yellow-300 bg-white focus:ring-4 focus:outline-none focus:ring-yellow-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-yellow-300"
   >
     Minuman
   </button>
   <button
+    (click)="setCategory('menuTambahan')"
     type="button"
-    class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800"
+    class="text-gray-900 border border-white hover:text-white hover:bg-yellow-300 hover:border-yellow-300 dark:border-yellow-300 dark:bg-yellow-300 dark:hover:border-yellow-300 bg-white focus:ring-4 focus:outline-none focus:ring-yellow-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:text-white dark:focus:ring-yellow-300"
   >
     Menu Tambahan
   </button>
 </div>
 
 <!-- Grid with consistent card sizes -->
-<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-4 px-4">
   <div
-    class="relative w-full aspect-w-16 aspect-h-9 overflow-hidden rounded-lg"
-  >
-    <!-- Kerupuk -->
-    <img
-      class="object-cover w-full h-full"
-      src="https://food-cms.grab.com/compressed_webp/items/IDITE2024052000084507793/detail/menueditor_item_80839fe0646447019c6a9a9b1231c327_1716163497754462128.webp"
-      alt="Food 1"
-    />
-  </div>
-  <div
-    class="relative w-full aspect-w-16 aspect-h-9 overflow-hidden rounded-lg"
-  >
-    <!-- Nasi Putih -->
-    <img
-      class="object-cover w-full h-full"
-      src="https://food-cms.grab.com/compressed_webp/items/IDITE2024022702104740866/detail/menueditor_item_f643cdac976644a3b689cdd80deb857e_1708999814365553180.webp"
-      alt="Food 2"
-    />
-  </div>
-  <div
-    class="relative w-full aspect-w-16 aspect-h-9 overflow-hidden rounded-lg"
-  >
-    <!-- Lontong -->
-    <img
-      class="object-cover w-full h-full"
-      src="https://food-cms.grab.com/compressed_webp/items/IDITE2024022702093851230/detail/menueditor_item_3d80fd79e0e14e289047d757ca5581ff_1708999703661397461.webp"
-      alt="Food 3"
-    />
-  </div>
-  <div
-    class="relative w-full aspect-w-16 aspect-h-9 overflow-hidden rounded-lg"
-  >
-    <!-- Nasi Lengko -->
-    <img
-      class="object-cover w-full h-full"
-      src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/0ae22b49-2a92-4a8a-b559-b77e84f56ea5_Go-Biz_20240307_170500.jpeg?auto=format"
-      alt="Food 4"
-    />
-  </div>
-  <div
-    class="relative w-full aspect-w-16 aspect-h-9 overflow-hidden rounded-lg"
-  >
-    <!-- Nasi Lengko -->
-    <img
-      class="object-cover w-full h-full"
-      src="https://food-cms.grab.com/compressed_webp/items/IDITE2024022602181959334/detail/menueditor_item_cdbb2ef7bd1a4d999686f2f7eaffc903_1708913850697478692.webp"
-      alt="Food 5"
-    />
-  </div>
-  <div
+    *ngFor="let item of filteredItems"
     class="relative w-full aspect-w-16 aspect-h-9 overflow-hidden rounded-lg"
   >
     <img
       class="object-cover w-full h-full"
-      src="https://food-cms.grab.com/compressed_webp/items/IDITE20220302103453021808/detail/menueditor_item_1c8c50c123d6409084871d48fd72453f_1662858838755675872.webp"
-      alt="Food 6"
+      [src]="item.image"
+      [alt]="item.name"
     />
-  </div>
-  <div
-    class="relative w-full aspect-w-16 aspect-h-9 overflow-hidden rounded-lg"
-  >
-    <img
-      class="object-cover w-full h-full"
-      src="https://food-cms.grab.com/compressed_webp/items/IDITE20220302103453021808/detail/menueditor_item_1c8c50c123d6409084871d48fd72453f_1662858838755675872.webp"
-      alt="Food 7"
-    />
-  </div>
-  <div
-    class="relative w-full aspect-w-16 aspect-h-9 overflow-hidden rounded-lg"
-  >
-    <img
-      class="object-cover w-full h-full"
-      src="https://food-cms.grab.com/compressed_webp/items/IDITE20220302103453021808/detail/menueditor_item_1c8c50c123d6409084871d48fd72453f_1662858838755675872.webp"
-      alt="Food 8"
-    />
-  </div>
-  <div
-    class="relative w-full aspect-w-16 aspect-h-9 overflow-hidden rounded-lg"
-  >
-    <img
-      class="object-cover w-full h-full"
-      src="https://food-cms.grab.com/compressed_webp/items/IDITE20220302103453021808/detail/menueditor_item_1c8c50c123d6409084871d48fd72453f_1662858838755675872.webp"
-      alt="Food 9"
-    />
-  </div>
-  <div
-    class="relative w-full aspect-w-16 aspect-h-9 overflow-hidden rounded-lg"
-  >
-    <img
-      class="object-cover w-full h-full"
-      src="https://food-cms.grab.com/compressed_webp/items/IDITE20220302103453021808/detail/menueditor_item_1c8c50c123d6409084871d48fd72453f_1662858838755675872.webp"
-      alt="Food 10"
-    />
-  </div>
-  <div
-    class="relative w-full aspect-w-16 aspect-h-9 overflow-hidden rounded-lg"
-  >
-    <img
-      class="object-cover w-full h-full"
-      src="https://food-cms.grab.com/compressed_webp/items/IDITE20220302103453021808/detail/menueditor_item_1c8c50c123d6409084871d48fd72453f_1662858838755675872.webp"
-      alt="Food 11"
-    />
-  </div>
-  <div
-    class="relative w-full aspect-w-16 aspect-h-9 overflow-hidden rounded-lg"
-  >
-    <img
-      class="object-cover w-full h-full"
-      src="https://food-cms.grab.com/compressed_webp/items/IDITE20220302103453021808/detail/menueditor_item_1c8c50c123d6409084871d48fd72453f_1662858838755675872.webp"
-      alt="Food 12"
-    />
+    <div
+      class="absolute bottom-0 left-0 bg-black text-white text-sm p-2 rounded-lg"
+    >
+      {{ item.name }}
+    </div>
   </div>
 </div>
