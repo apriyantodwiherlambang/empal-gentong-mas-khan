@@ -9,6 +9,7 @@ import { PopularMenuComponent } from './components/popular-menu/popular-menu.com
 import { SwipperComponent } from './components/swipper/swipper.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { MapComponent } from './components/map/map.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
     PopularMenuComponent,
     SwipperComponent,
     FooterComponent,
+    MapComponent,
   ],
   imports: [CommonModule, GoogleMapsModule],
   exports: [
@@ -31,6 +33,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
     PopularMenuComponent,
     SwipperComponent,
     FooterComponent,
+    MapComponent,
   ],
 })
 export class SharedModule {}
